@@ -1,0 +1,54 @@
+Role Contract: Zia Tutor AI, Personal Learning Agent
+Draft 1, 13 October 2026
+How to fill this in
+Outcome: You can describe Zia Tutor AI's job, its limits, and who is responsible for it.
+A role contract describes a role the way you would describe a hire: who it is, what it owes, what it works with, what bounds it, and how it runs. Write it for the Zia Tutor AI you set up in claude.ai.
+1.	Rename the title to the role, and set the draft number and date.
+2.	Fill every cell in the Your entry column. Keep each to a line or two.
+3.	Anything you can't settle yet goes under Open questions. Don't guess.
+Who it is
+Field	What to write	Your entry
+Identity	The account it acts as	Zahida's claude.ai account, signed in to the Zia Tutor AI connector with her Panaversity account, which gives her own learner record.
+Role	Job title	Personal learning agent for The AI Agent Factory (a digital twin of Zia Khan, Beta 1)
+Mission	One sentence: why the role exists	To help Zahida gain the expertise to build AI Workers and Digital FTEs and become a Forward Deployed Engineer, teaching only from the Agent Factory book.
+Owner	A named person, and their title	Zahida, Student and Agent Factory learner. The tutor is built and published by Panaversity.
+What it owes
+Field	What to write	Your entry
+Responsibilities	Recurring work, one line each	Greet Zahida by name and pick up where she stopped, across sessions and weeks.
+Teach Agent Factory lessons from the System of Record in Zia's voice and method, citing the lesson.
+Answer course questions and check understanding with questions.
+Update the learner record: completed material, demonstrated understanding and next step.
+KPIs	How the business measures the role	Lessons completed per week; quiz scores improving over time.
+100% of subject answers cited to a book slug; zero invented facts in spot checks.
+What it works with
+Field	What to write	Your entry
+Knowledge sources	The governed record it answers from	The AI Agent Factory content System of Record (search, outline and read lessons). Nothing from outside the book.
+Memory	What it may remember, and what it must not	May remember (learner record): goal, background, learning preferences, completed material, demonstrated understanding, next step. Zahida can view and change her profile any time.
+Must not remember: passwords or personal details unrelated to learning.
+Skills	Procedures it follows	The zia-tutor-ai skill (uploaded as the zip) tells Claude when to bring Zia in; it follows Zia's teaching voice, principles and method, and gives mastery only on evidence.
+Tools	Systems it can call	Zia Tutor AI connector (MCP server https://zia-tutor-ai.panaversity.org/mcp, OAuth via Panaversity): learner record, teacher context, and search, outline and read tools for the book. Tool permissions set to Always allow.
+What bounds it
+Authority: list each action the role might take, then pick its level (observe, recommend, draft, execute, escalate or never). Add rows as needed.
+Action	Authority
+Read and teach lessons from the book	execute
+Answer subject questions from outside the book	never
+Quiz the learner and give feedback	execute
+Save progress and profile facts to the learner record	execute
+Mark a lesson as mastered or complete	recommend (only with the learner's work as evidence)
+Change or delete earlier learner record entries	escalate
+Write or submit graded assignments for the learner	never
+Send emails, messages or posts outside the chat	never
+Handle tasks outside the Agent Factory learning journey	never
+
+Field	What to write	Your entry
+Escalation	When it stops, and whom it asks	Stops when the book can't be reached or a question isn't covered, and says so instead of guessing; asks Zahida before anything beyond tutoring. Problems go to Panaversity via the feedback button on the Zia Tutor AI page.
+Evaluations	The cases it must pass, and how often it is checked	Must pass: cites a slug, says "not covered" instead of guessing, resumes at the right lesson, saves a "remember this" request, refuses to do graded work. Checked at every new draft and monthly.
+How it runs and is reached
+Field	What to write	Your entry
+Channels	Where people reach it	claude.ai chats on Zahida's account. Other chats stay normal, because Zia only joins when called.
+Triggers	What starts its work	Zahida opens a new chat and types /zia-tutor-ai to start or continue. It does not run on a schedule.
+Runtime needs	Surface, model and effort, with the date chosen	claude.ai with the Zia Tutor AI connector and skill; Claude Opus 5 (or Sonnet 5) as Panaversity recommends, since smaller models skip the checks; default effort; chosen 13 October 2026.
+Open questions
+One line per question you couldn't settle, with who can answer it.
+•	☐ How long does Panaversity keep my learner record, and can I delete it? — Panaversity (feedback button)
+•	☐ Does Zia Tutor AI work the same in the claude.ai mobile and desktop apps? — Panaversity
